@@ -1,0 +1,6 @@
+alias yt='cd /media/hdd/youtube'
+alias noisetorch='/home/v/.local/bin/noisetorch'
+alias work='cd /media/hdd/work'
+alias hdd='cd /media/hdd'
+alias acad='cd /media/hdd/iitm-academic'
+alias email='xdg-open "https://mail.google.com"'
