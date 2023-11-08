@@ -4,15 +4,17 @@ bash : .bashrc ./.config/bash
 	mkdir -p ~/.config/bash
 	cp -a ./.config/bash/. ~/.config/bash/
 
+zsh : bash .
+
 tmux : ./.config/tmux
 	mkdir -p ~/.config/tmux
 	cp -a ./.config/tmux/. ~/.config/tmux/
 
-nvim : ./.config
+nvim : ./.config/nvim
 	mkdir -p ~/.config/nvim
 	cp -a ./.config/nvim/. ~/.config/nvim/
 
-nnn : ./.config
+nnn : 
 	echo No config.
 
 code : ./.config
@@ -24,7 +26,7 @@ obsidian : ./.config
 guake : ./.config
 	echo Not implemented.
 
-kitty : ./.config
+kitty : ./.config/kitty
 	mkdir -p ~/.config/kitty
 	cp -a ./.config/kitty/. ~/.config/kitty/
 
@@ -34,6 +36,11 @@ calibre-server : ./.config
 syncthing : ./.config
 	echo Not implemented.
 
-tui-apps : bash tmux nvim nnn
+lydm : ./.config
+	echo Not implemented.
+
+tui-apps : bash zsh tmux nvim nnn
 gui-apps : code obsidian guake kitty
 services : calibre-server syncthing
+
+linux : lydm

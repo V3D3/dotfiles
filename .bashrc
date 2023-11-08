@@ -5,9 +5,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='ls --color=auto'
-alias ll='ls -laF'
-alias quit='exit'
+shopt -s autocd
 
 C_BLACK="\e[30m"
 C_RED="$(tput setaf 1)"
