@@ -49,3 +49,7 @@ export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
+# start tmux
+if [ -x "$(command -v tmux)" ] && [ -z "${TMUX}" ]; then
+	exec tmux new-session -A -s ${USER} >/dev/null 2>&1
+fi
