@@ -32,16 +32,16 @@ BLK="0B" CHR="0B" DIR="04" EXE="06" REG="00" HARDLINK="06" SYMLINK="06" MISSING=
 export NNN_FCOLORS="$BLK$CHR$DIR$EXE$REG$HARDLINK$SYMLINK$MISSING$ORPHAN$FIFO$SOCK$OTHER"
 
 # bookmarks
-source ~/.bash_p_bookmarks.sh
+source ~/.config/bash/bookmarks.sh
 
 # command aliases
-source ~/.bash_p_aliases.sh
+source ~/.config/bash/aliases.sh
 
 # some creds
-source ~/.bash_p_creds.sh
+source ~/.config/bash/creds.sh
 
 # useful bash functions
-source ~/.bash_p_functions.sh
+source ~/.config/bash/functions.sh
 
 # MAGICAL piece of snake
 export PATH="/usr/local/lib:$PATH"

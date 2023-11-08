@@ -1,4 +1,0 @@
-bash
-tmux
-vim
-nnn
