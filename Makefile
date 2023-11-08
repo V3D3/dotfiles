@@ -25,7 +25,8 @@ guake : ./.config
 	echo Not implemented.
 
 kitty : ./.config
-	echo Not implemented.
+	mkdir -p ~/.config/kitty
+	cp -a ./.config/kitty/. ~/.config/kitty/
 
 calibre-server : ./.config
 	echo Not implemented.
