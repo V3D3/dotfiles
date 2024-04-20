@@ -14,16 +14,10 @@ nvim : ./.config/nvim
 	mkdir -p ~/.config/nvim
 	cp -a ./.config/nvim/. ~/.config/nvim/
 
-nnn : 
-	echo No config.
-
 code : ./.config
 	echo Not implemented.
 
 obsidian : ./.config
-	echo Not implemented.
-
-guake : ./.config
 	echo Not implemented.
 
 kitty : ./.config/kitty
@@ -39,8 +33,8 @@ syncthing : ./.config
 lydm : ./.config
 	echo Not implemented.
 
-tui-apps : bash zsh tmux nvim nnn
-gui-apps : code obsidian guake kitty
+tui-apps : bash zsh tmux nvim
+gui-apps : code obsidian kitty
 services : calibre-server syncthing
 
 linux : lydm

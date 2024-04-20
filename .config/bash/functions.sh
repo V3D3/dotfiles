@@ -1,10 +1,10 @@
 function selfhelp ()
 {
 	echo "Directory and file path aliases:";
-	cat ~/.bash_p_bookmarks.sh
+	cat ~/.config/bash/bookmarks.sh
 	echo "
 Command aliases:";
-	cat ~/.bash_p_aliases.sh
+	cat ~/.config/bash/aliases.sh
 	echo "
 Custom functions:
 1. cdp <dirpath>: create and cd into a path
@@ -35,11 +35,11 @@ function bprog ()
 	elif [ $# -lt 2 ]
 	then
 		location="$(pwd)"
-		echo "alias $1='cd $location'" >> ~/.bash_p_bookmarks.sh
+		echo "alias $1='cd $location'" >> ~/.config/bash/bookmarks.sh
 	elif [ $# -eq 2 ]
 	then
 		location="$(pwd)/$1"
-		echo "alias $2='$location'" >> ~/.bash_p_bookmarks.sh
+		echo "alias $2='$location'" >> ~/.config/bash/bookmarks.sh
 	fi
 	source ~/.bashrc
 }
@@ -52,7 +52,7 @@ function palias ()
 		echo "creates: alias='command'";
 		return;
 	fi
-	echo "alias $2='$1'" >> ~/.bash_p_aliases.sh
+	echo "alias $2='$1'" >> ~/.config/bash/aliases.sh
 	source ~/.bashrc
 }
 
